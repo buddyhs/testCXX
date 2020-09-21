@@ -1,0 +1,90 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/sinkdream/Desktop/testCXX/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_82f72/fast"
+/usr/bin/make -f CMakeFiles/cmTC_82f72.dir/build.make CMakeFiles/cmTC_82f72.dir/build
+make[1]: Entering directory '/home/sinkdream/Desktop/testCXX/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_82f72.dir/CheckSymbolExists.cxx.o
+/usr/bin/g++    -std=c++11    -o CMakeFiles/cmTC_82f72.dir/CheckSymbolExists.cxx.o -c /home/sinkdream/Desktop/testCXX/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_82f72
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82f72.dir/link.txt --verbose=1
+/usr/bin/g++   -std=c++11     CMakeFiles/cmTC_82f72.dir/CheckSymbolExists.cxx.o  -o cmTC_82f72 
+CMakeFiles/cmTC_82f72.dir/CheckSymbolExists.cxx.o：在函数‘main’中：
+CheckSymbolExists.cxx:(.text+0x16)：对‘pthread_create’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_82f72.dir/build.make:86: recipe for target 'cmTC_82f72' failed
+make[1]: *** [cmTC_82f72] Error 1
+make[1]: Leaving directory '/home/sinkdream/Desktop/testCXX/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_82f72/fast' failed
+make: *** [cmTC_82f72/fast] Error 2
+
+File /home/sinkdream/Desktop/testCXX/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/sinkdream/Desktop/testCXX/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7f40a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7f40a.dir/build.make CMakeFiles/cmTC_7f40a.dir/build
+make[1]: Entering directory '/home/sinkdream/Desktop/testCXX/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7f40a.dir/CheckSymbolExists.cxx.o
+/usr/bin/g++    -std=c++11    -o CMakeFiles/cmTC_7f40a.dir/CheckSymbolExists.cxx.o -c /home/sinkdream/Desktop/testCXX/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_7f40a
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f40a.dir/link.txt --verbose=1
+/usr/bin/g++   -std=c++11     CMakeFiles/cmTC_7f40a.dir/CheckSymbolExists.cxx.o  -o cmTC_7f40a 
+CMakeFiles/cmTC_7f40a.dir/CheckSymbolExists.cxx.o：在函数‘main’中：
+CheckSymbolExists.cxx:(.text+0x16)：对‘pthread_create’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_7f40a.dir/build.make:86: recipe for target 'cmTC_7f40a' failed
+make[1]: *** [cmTC_7f40a] Error 1
+make[1]: Leaving directory '/home/sinkdream/Desktop/testCXX/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_7f40a/fast' failed
+make: *** [cmTC_7f40a/fast] Error 2
+
+File /home/sinkdream/Desktop/testCXX/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/sinkdream/Desktop/testCXX/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2ada3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2ada3.dir/build.make CMakeFiles/cmTC_2ada3.dir/build
+make[1]: Entering directory '/home/sinkdream/Desktop/testCXX/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2ada3.dir/CheckFunctionExists.cxx.o
+/usr/bin/g++    -std=c++11 -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_2ada3.dir/CheckFunctionExists.cxx.o -c /home/sinkdream/Desktop/testCXX/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_2ada3
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ada3.dir/link.txt --verbose=1
+/usr/bin/g++   -std=c++11 -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_2ada3.dir/CheckFunctionExists.cxx.o  -o cmTC_2ada3 -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_2ada3.dir/build.make:86: recipe for target 'cmTC_2ada3' failed
+make[1]: *** [cmTC_2ada3] Error 1
+make[1]: Leaving directory '/home/sinkdream/Desktop/testCXX/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_2ada3/fast' failed
+make: *** [cmTC_2ada3/fast] Error 2
+
+

@@ -1,0 +1,3 @@
+/home/sinkdream/Desktop/testCXX/build/CMakeFiles/rebuild_cache.dir
+/home/sinkdream/Desktop/testCXX/build/CMakeFiles/edit_cache.dir
+/home/sinkdream/Desktop/testCXX/build/CMakeFiles/main.dir
